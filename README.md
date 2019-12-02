@@ -12,4 +12,4 @@ Página en construcción....
 
 [Visita mi web aquí para más información.](https://www.cs.us.es/~mdelamor)
 
-I do not own the copyright of the images imployed in the slides.
+I do not own the copyright of the images employed in the slides.
