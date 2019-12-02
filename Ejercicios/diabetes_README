@@ -1,0 +1,127 @@
+
+Este dataset se ha extraido del trabajo proben1, el cual hizo uso del
+UCI machine learning database: "diabetes". Este dataset ya se ha 
+limpiado de valores faltantes y normalizado, como se explica a 
+continuación.
+
+ Encoding:
+===========
+
+Although there are no missing values in this dataset according to its
+documentation, there are several senseless 0 values. These most probably
+indicate missing data. Nevertheless, we handle this data as if it was real,
+thereby introducing some errors (or noise, if you want) into the dataset.
+
+Attribute information: (no missing values)
+0. Number of times pregnant
+ 1  continuous  0...17 --> 0...1  (34 records have x > 10)
+1. Plasma glucose concentration a 2 hours in an oral glucose tolerance test
+ 1  continuous  0...199 --> 0...1 (5 records with value 0 are probably
+    erroneous or indicate missing data; we just don't care)
+2. Diastolic blood pressure (mm Hg)
+ 1  continuous  0...122 --> 0...1  (35 records with value 0, next higher is 24)
+3. Triceps skin fold thickness (mm)
+ 1  continuous  0...99 --> 0...1  (227 records with value 0, next higher is 7)
+4. 2-Hour serum insulin (mu U/ml)
+ 1  continuous  0...846 --> 0...1  (347 records with value 0, next higher is 14)
+5. Body mass index (weight in kg/(height in m)^2)
+ 1  continuous  0...67.1 --> 0...1 (11 records with value 0, next higher is 18)
+6. Diabetes pedigree function
+ 1  continuous  0.078...2.42 --> 0...1
+7. Age (years)
+ 1  continuous  21...81 --> 0...1
+------
+ 8 inputs
+
+8. Class variable (0 or 1)
+ 2  1-of-2
+-------
+ 2 outputs
+
+Class distribution:
+   0     65%    500  no diabetes
+   1     35%    268  diabetes
+total           768
+
+ The dataset:
+===========
+
+Diagnose diabetes of Pima indians. Based on personal data (age, number of 
+times pregnant) and the results of medical examinations (e.g. blood 
+pressure, body mass index, result of glucose tolerance test, etc.), try 
+to decide whether a Pima indian individual is diabetes positive or not.
+
+1. Title: Pima Indians Diabetes Database
+
+2. Sources:
+   (a) Original owners: National Institute of Diabetes and Digestive and
+                        Kidney Diseases
+   (b) Donor of database: Vincent Sigillito (vgs@aplcen.apl.jhu.edu)
+                          Research Center, RMI Group Leader
+                          Applied Physics Laboratory
+                          The Johns Hopkins University
+                          Johns Hopkins Road
+                          Laurel, MD 20707
+                          (301) 953-6231
+   (c) Date received: 9 May 1990
+
+3. Past Usage:
+    1. Smith,~J.~W., Everhart,~J.~E., Dickson,~W.~C., Knowler,~W.~C., \&
+       Johannes,~R.~S. (1988). Using the ADAP learning algorithm to forecast
+       the onset of diabetes mellitus.  In {\it Proceedings of the Symposium
+       on Computer Applications and Medical Care} (pp. 261--265).  IEEE
+       Computer Society Press.
+
+       The diagnostic, binary-valued variable investigated is whether the
+       patient shows signs of diabetes according to World Health Organization
+       criteria (i.e., if the 2 hour post-load plasma glucose was at least 
+       200 mg/dl at any survey  examination or if found during routine medical
+       care).   The population lives near Phoenix, Arizona, USA.
+
+       Results: Their ADAP algorithm makes a real-valued prediction between
+       0 and 1.  This was transformed into a binary decision using a cutoff of 
+       0.448.  Using 576 training instances, the sensitivity and specificity
+       of their algorithm was 76% on the remaining 192 instances.
+
+4. Relevant Information:
+      Several constraints were placed on the selection of these instances from
+      a larger database.  In particular, all patients here are females at
+      least 21 years old of Pima Indian heritage.  ADAP is an adaptive learning
+      routine that generates and executes digital analogs of perceptron-like
+      devices.  It is a unique algorithm; see the paper for details.
+
+5. Number of Instances: 768
+
+6. Number of Attributes: 8 plus class 
+
+7. For Each Attribute: (all numeric-valued)
+   1. Number of times pregnant
+   2. Plasma glucose concentration a 2 hours in an oral glucose tolerance test
+   3. Diastolic blood pressure (mm Hg)
+   4. Triceps skin fold thickness (mm)
+   5. 2-Hour serum insulin (mu U/ml)
+   6. Body mass index (weight in kg/(height in m)^2)
+   7. Diabetes pedigree function
+   8. Age (years)
+   9. Class variable (0 or 1)
+
+8. Missing Attribute Values: None
+
+9. Class Distribution: (class value 1 is interpreted as "tested positive for
+   diabetes")
+
+   Class Value  Number of instances
+   0            500
+   1            268
+
+10. Brief statistical analysis:
+
+    Attribute number:    Mean:   Standard Deviation:
+    1.                     3.8     3.4
+    2.                   120.9    32.0
+    3.                    69.1    19.4
+    4.                    20.5    16.0
+    5.                    79.8   115.2
+    6.                    32.0     7.9
+    7.                     0.5     0.3
+    8.                    33.2    11.8
