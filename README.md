@@ -1,7 +1,8 @@
 # DL
 Material adaptado del curso Deep Learning del MII (Universidad de Sevilla)
 
-Libro de referencia: [Deep Learning with Python, F. Chollet](https://www.manning.com/books/deep-learning-with-python)
+Libro de referencia: [Deep Learning with Python, F. Chollet](https://www.manning.com/books/deep-learning-with-python), y su [repositorio en GitHub](https://github.com/fchollet/deep-learning-with-python-notebooks)
+
 
 Cursos de referencia:
  * [CS231n: Convolutional Neural Networks for Visual Recognition, Andrej Karphaty, Justin Johnson, Fei-Fei Li (Standford)](http://cs231n.stanford.edu/2016/)
