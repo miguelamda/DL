@@ -16,5 +16,5 @@ Los Notebooks de las prácticas están basados en las siguientes versiones (en p
 
 [Visita mi web aquí para más información.](https://www.cs.us.es/~mdelamor)
 
-Important note: I do not own the copyright of the images employed in the slides and the Jupyter notebooks. 
+__Important note__: I do not own the copyright of the images employed in the slides and the Jupyter notebooks. 
 
